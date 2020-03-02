@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<p>Name:{{stnd.name}}</p><br>
+<img src="{{student.profilepic.url}}" ><br><br>
+<p>Email:{{stnd.name.email}}</p><br>
+<p>Date of Birth:{{stnd.name.dob}}</p>
+<p>Gender:{{stnd.name.gender}}</p><br>
+<p>Father Name:{{stnd.father}}</p><br>
+<p>Mother Name:{{stnd.mother}}</p><br>
+<a href="{{student.name.sccmemo.url}}">SSC Memo</a><br>
+<a href="{{student.name.intermemo.url}}">Intermediate Memo</a><br>
+<p>Department:{{student.name.department}}</p><br>
+
+<a href = "{% url 'College:user_logout' %}">Logout</a>
+</body>
+</html>
